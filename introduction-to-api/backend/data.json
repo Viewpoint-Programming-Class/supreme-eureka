@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Johnson & Johnson",
+        "ticker": "JNJ",
+        "price": 174.47
+    },
+    {
+        "name": "Pfeizer",
+        "ticker": "PFE",
+        "price": 47.39
+    },
+    {
+        "name": "Maderna",
+        "ticker": "MRNA",
+        "price": 168.04
+    },
+    {
+        "name": "BioNTech",
+        "ticker": "BNTX",
+        "price": 156
+    }
+]

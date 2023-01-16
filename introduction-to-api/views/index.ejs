@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stocks</title>
+    <link rel="stylesheet" href="/style.css?token=<%= token %>" />
+   
+  </head>
+ 
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="center-content margin-top">
+      <form style="display: none" method="post" action="/companies?token=<%= token %>">
+        <div class="input-group">
+          <label for="company">Company</label>
+          <input name="name" type="text" id="company" />
+        </div>
+        <input name="id" type="hidden" />
+        <div class="input-group">
+          <label for="ticker">Ticker</label> <input name="ticker" type="text" id="ticker" />
+        </div>
+        <div class="input-group">
+          <label for="price">Price</label> <input type="number" name="price" id="price" />
+        </div>
+        <div class="button-group">
+          <button type="submit">Save</button>
+
+          <button
+            type="reset"
+            onclick="hideForm()"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+      <button id="add" onclick="showForm()">
+        Add
+      </button>
+    </div>
+
+    <script src="/scripts/script.js?token=<%= token %>"></script>
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+
+* {
+  box-sizing: border-box;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 5px;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+tr:nth-child(even),
+th {
+  background-color: rgb(150, 150, 150);
+}
+
+form > div.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > div > input {
+  margin-bottom: 15px;
+}
+
+form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form > div.button-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form > div.button-group > button {
+  flex-grow: 1;
+}
+
+button {
+  background-color: #545481ff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 1px;
+}
